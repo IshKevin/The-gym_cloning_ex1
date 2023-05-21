@@ -7,46 +7,74 @@
     <title>Google</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="max-h-screen m-4 font-sans">
-    <header class="flex justify-between cursor-pointer ">
-        <div class="flex ">
-            <span class="mx-2 hover:underline">About</span>
-            <span class="mx-2 hover:underline">Store</span>
-        </div>
-        <div class="flex align-baseline">
-            <div class="mx-4 hover:underline">Gmail</div>
-            <div class="mx-4 hover:underline">Images</div>
-            <div class="mx-4 hover:underline""><img src="/imag/other.PNG" alt="other">
+<body class="max-h-screen  font-sans flex flex-col">
+    <header class="h-1/6 flex-none">
+     <nav class="h-full w-full px-3 py-5">
+        <ul class="h-full flex justify-end align-middle text-sm">
+            <li class="ml-4 hover:underline hover:cursor-pointer">Gmail</li>
+            <li class="ml-4 hover:underline hover:cursor-pointer">Images</li>
+            <li class="ml-4">
+               <div class=" h-7 w-7 rounded-full flex justify-center align-baseline hover:bg-gray-200">
+                <img class="h-5 w-5 " src="/imag/other.PNG" alt="other"></li>
             </div>
-            <div class="mx-4">
-             <button class="w-auto p-4 text-white capitalize bg-blue-700 rounded-lg whitespace-nowrap"> sign in</button>
+            <li class="ml-4">
+                <div class="border h-7 w-7 rounded-full hover:bg-gray-200" >
+               <span class=" h-5 w-5  bg-orange-700 rounded-full">KI</span>
             </div>
-        </div>
+         </li>
+        </ul>
+     </nav>
     </header>
-    <main class="flex justify-center">
-        <div>
-        <div class="my-8 text-8xl capitalize font-s text-center">
-            <span class="text-blue-500">G</span><span class="text-red-500">o</span><span class="text-yellow-500">o</span><span class="text-blue-500">g</span><span class="text-green-500">l</span><span class="text-red-500">e</span> 
+    <section class=" h-4/6 flex justify-center align-middle">
+        <div class="my-20 ">
+                <img class="w-72 mb-5 ml-44" src="/imag/logo.jpg" alt="Google Logo Image">
+                <div class="border w-[600px] h-11 flex align-middle p-4 rounded-[30px] hover:shadow-sm">
+                    <img class="h-4 mr-4 cursor-pointer" src="/imag/search.PNG" alt="search">
+                    <input id="search" class="flex-grow h-4 mr-4 border-none hover:border-none" type="text">
+                    <img class="h-4 mr-4 cursor-pointer" src="/imag/mice.PNG" alt="mice">
+                    <img class="h-4 mr-4 cursor-pointer" src="/imag/lens.PNG" alt=" lens">
+                </div>
+                <div class="mt-5 flex justify-center ">
+                    <button class="h-10 text-sm rounded-md ml-3 text-gray-950 bg-slate-200 w-32 p-2 hover:border">Google Search</button>
+                    <button class="h-10 text-sm rounded-md ml-3 text-gray-950 bg-slate-200 w-36 p-2 hover:border">I'm Feeling Lucky</button>
+                </div>
+                <div class="mt-5 flex justify-center text-sm">
+                    <p>Google Offered in: <a class="text-blue-600 hover:underline" href="">Français</a> <a class="text-blue-600 hover:underline" href="">Kiswahili</a> <a class="text-blue-600 hover:underline" href="">Ikinyarwanda</a></p>
+                </div>
+            </div>
+        </section>      
+    </section>
+    <footer class=" h-1/6 bg-slate-200">
+        <div class="flex align-middle p-5 h-1/2 border-b border-gray-800">
+            <p class="text-gray-500 text-sm">Rwanda</p>
         </div>
-        <div class="my-4 flex justify-evenly w-full">
-           <div> 
-            <img src="/imag/search.PNG" alt="search">
-           </div>
-           <div>
-            <input type="text" name="" id="">
-           </div>
-           <div>
-            <img src="/imag/mice.PNG" alt="mice">
+        <div class="p-5 h-1/2 text-sm text-gray-500 flex justify-between hover:underline">
+            <ul class="flex">
+                <li class=" ml-4">
+                    <a href="">About</a>
+                </li>
+                <li class=" ml-4">
+                    <a href="">Advertising</a>
+                </li>
+                <li class=" ml-4">
+                    <a href="">Business</a>
+                </li>
+                <li class=" ml-4">
+                    <a href="">How Search Works</a>
+                </li>
+            </ul>
+            <ul class="flex">
+                <li class=" mr-4">
+                    <a href="">Privacy</a>
+                </li>
+                <li class=" mr-4">
+                    <a href="">Terms</a>
+                </li>
+                <li class=" mr-4">
+                    <a href="">Settings</a>
+                </li>
+            </ul>
         </div>
-           <div>
-            <img src="/imag/lens.PNG" alt="lens">
-        </div>
-        </div>
-        <div>
-          <button>Google search</button>
-          <button>I'm Feeling Lucky</button>  
-        </div>
-        </div>
-    </main>  
+    </footer>
 </body>
 </html>
